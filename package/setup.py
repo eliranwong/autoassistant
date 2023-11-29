@@ -22,7 +22,7 @@ with open(os.path.join(package, "requirements.txt"), "r") as fileObj:
 # https://packaging.python.org/en/latest/guides/distributing-packages-using-setuptools/
 setup(
     name=package,
-    version="0.3",
+    version="0.4",
     python_requires=">=3.8",
     description="A simple data teachable chat, built on AutoGen framework. An integrated tool in LetMeDoIt AI project.",
     long_description=long_description,
@@ -39,6 +39,7 @@ setup(
     entry_points={
         "console_scripts": [
             f"{package}=autoassistant.autoassistant:main",
+            "autoassist=autoassistant.autoassistant:main",
         ],
     },
     keywords="ai autogen assistant gpt openai",
