@@ -22,9 +22,9 @@ with open(os.path.join(package, "requirements.txt"), "r") as fileObj:
 # https://packaging.python.org/en/latest/guides/distributing-packages-using-setuptools/
 setup(
     name=package,
-    version="0.4",
+    version="0.5",
     python_requires=">=3.8",
-    description="A simple data teachable chat, built on AutoGen framework. An integrated tool in LetMeDoIt AI project.",
+    description="An auto-assistant chat built on AutoGen framework. An integrated tool in LetMeDoIt AI project.",
     long_description=long_description,
     author="Eliran Wong",
     author_email="support@letmedoit.ai",
